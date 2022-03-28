@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Redirect Service</title>
+        <script>
+            var URI = new URLSearchParams(window.location.search).get("target");
+            if (URI) {
+                window.location.replace(URI);
+            }
+        </script>
+    </head>
+    <body>
+        <p>This should not be visible.</p>
+        <p>The "target" parameter is likely missing</p>
+    </body>
+</html>
